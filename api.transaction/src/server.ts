@@ -2,7 +2,7 @@ import express, { Express } from 'express';
 import { scopePerRequest, loadControllers } from 'awilix-express';
 
 import { AppConfig } from './configuration';
-import { Logger } from './types';
+import { Logger } from './common/types';
 import { AwilixContainer } from 'awilix';
 
 export default (container: AwilixContainer) => {

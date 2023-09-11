@@ -7,6 +7,9 @@ import { TransactionFindByIdQuery } from './services/queries/transaction-find-by
 import { TransactionRepository } from './services/repositories/transaction.repository';
 import { TransactionCreateCommand } from './services/commands/transaction-create.command';
 
+import { producer } from './kafka';
+import { TransactionUpdateStatus } from './services/commands/transaction-update-status.command';
+
 const container = createContainer({
   injectionMode: InjectionMode.CLASSIC,
 });
@@ -21,9 +24,12 @@ export default async () => {
 
     // services > commands
     transactionCreateCommand: asClass(TransactionCreateCommand),
+    transactionUpdateStatus: asClass(TransactionUpdateStatus),
 
     // repositories
     transactionRepository: asClass(TransactionRepository),
+
+    producer: asValue(producer),
 
     // db
     db: asValue(await database()),

@@ -1,4 +1,4 @@
-import { Logger } from './src/types';
+import { Logger } from './src/common/types';
 
 // initialize project container
 import containerInitializer from './src/container';

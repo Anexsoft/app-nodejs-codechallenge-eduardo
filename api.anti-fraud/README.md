@@ -1,4 +1,4 @@
-# @yape/api.transaction
+# @yape/api.anti-fraud
 
 Api to serve transaction operations
 

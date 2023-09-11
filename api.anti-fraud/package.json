@@ -1,5 +1,5 @@
 {
-  "name": "@yape/api.transaction",
+  "name": "@yape/api.anti-fraud",
   "version": "0.0.1",
   "description": "Api for transaction operation management",
   "scripts": {
@@ -16,16 +16,13 @@
   "license": "ISC",
   "dependencies": {
     "awilix": "^8.0.1",
-    "awilix-express": "^8.0.0",
+    "axios": "^1.5.0",
     "dotenv": "^16.3.1",
-    "express": "^4.18.2",
     "kafkajs": "^2.2.4",
-    "mongodb": "^6.0.0",
     "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
-    "@types/node": "^20.6.0",
     "@typescript-eslint/eslint-plugin": "^6.6.0",
     "@typescript-eslint/parser": "^6.6.0",
     "eslint": "^8.49.0",
